@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ooty hotels</title>
+		<meta charset="ISO-8859-1">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="{{url_for('static', filename='images1/favicon.ico')}}">
+		<link rel="shortcut icon" href="{{url_for('static', filename='images1/favicon.ico')}}" />
+		<link rel="stylesheet" href="{{url_for('static', filename='booking/css/booking.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css1/camera.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css1/owl.carousel.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css1/style.css')}}">
+		<script src="{{url_for('static', filename='js1/jquery.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/jquery-migrate-1.2.1.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/script.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/superfish.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/jquery.ui.totop.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/jquery.equalheights.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/jquery.mobilemenu.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/jquery.easing.1.3.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/owl.carousel.js')}}"></script>
+		<script src="{{url_for('static', filename='js1/camera.js')}}"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="{{url_for('static', filename='js1/jquery.mobile.customized.min.js')}}"></script>
+		<!--<![endif]-->
+		<script src="{{url_for('static', filename='booking/js/booking.js')}}"></script>
+		<script>
+			$(document).ready(function(){
+			jQuery('#camera_wrap').camera({
+				loader: false,
+				pagination: false ,
+				minHeight: '444',
+				thumbnails: false,
+				height: '48.375%',
+				caption: true,
+				navigation: true,
+				fx: 'mosaic'
+			});
+			/*carousel*/
+			var owl=$("#owl");
+				owl.owlCarousel({
+				items : 2, //10 items above 1000px browser width
+				itemsDesktop : [995,2], //5 items between 1000px and 901px
+				itemsDesktopSmall : [767, 2], // betweem 900px and 601px
+				itemsTablet: [700, 2], //2 items between 600 and 0
+				itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+				navigation : true,
+				pagination : false
+				});
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+			</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="{{url_for('static', filename='js1/html5shiv.js')}}"></script>
+		<link rel="stylesheet" media="screen" href="{{url_for('static', filename='css1/ie.css')}}">
+		<![endif]-->
+	</head>
+	<body class="page1" id="top">
+<!--==============================header=================================-->
+		<div class="slider_wrapper">
+			<div id="camera_wrap" class="">
+				<div data-src="{{url_for('static', filename='images1/slide.jpg')}}">
+					<div class="caption fadeIn">
+						<h2>Teanest-Nature Resorts</h2>
+						<div class="price">
+							Nice place to spend quality time with  
+							<span>Family and Nature</span>
+						</div>
+						<a href="https://www.itchotels.com/in/en/itcgrandchola-chennai">More Details</a>
+					</div>
+				</div>
+				<div data-src="{{url_for('static', filename='images1/slide1.jpg')}}">
+					<div class="caption fadeIn">
+						<h2>King's Cliff</h2>
+						<div class="price">
+							Just because it's on a nice location with
+							<span>lot of green</span>
+						</div>
+						<a href="https://www.itchotels.com/in/en/itcgrandchola-chennai">More details</a>
+					</div>
+				</div>
+				<div data-src="{{url_for('static', filename='images1/slide2.jpg')}}">
+					<div class="caption fadeIn">
+						<h2>Hotel Sinclairs Retreat Ooty</h2>
+						<div class="price">
+							Great Stay at this place 
+							<span>Unique tastes, aromas & flavours</span>
+						</div>
+						<a href="https://www.itchotels.com/in/en/itcgrandchola-chennai">More Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==============================Content=================================-->
+		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
+			<div class="container_12">
+				<div class="grid_4">
+					<div class="banner">
+						<img src="{{url_for('static', filename='images1/ban_img1.jpg')}}" alt="" width="500px" height="360px">
+						<div class="label">
+							<div class="title">Hotel Lakeview</div>
+							<div class="price">Everyone loved it
+							<span> </span></div>
+							<a href="#">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<img src="{{url_for('static', filename='images1/ban_img2.jpg')}}" alt="" width="500px" height="360px">
+						<div class="label">
+							<div class="title">Accord HighLand</div>
+							<div class="price">Enjoy staying here <span></span></div>
+							<a href="#">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<img src="{{url_for('static', filename='images1/ban_img3.jpg')}}" alt="" width="500px" height="360px">
+						<div class="label">
+							<div class="title">Hotel Gem Park</div>
+							<div class="price">Great food and service<span></span></div>
+							<a href="#">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="grid_6">
+					<h3>Booking Form</h3>
+					<form id="bookingForm">
+						<div class="fl1">
+							<div class="tmInput">
+								<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+							</div>
+							<div class="tmInput">
+								<input name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+						</div>
+						<div class="fl1">
+							<div class="tmInput">
+								<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+							</div>
+							<div class="tmInput mr0">
+								<input name="Hotel" placeHolder="Hotel:" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+						</div>
+						<div class="clear"></div>
+						<strong>Check-in</strong>
+						<label class="tmDatepicker">
+							<input type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
+						</label>
+						<div class="clear"></div>
+						<strong>Check-out</strong>
+						<label class="tmDatepicker">
+							<input type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
+						</label>
+						<div class="clear"></div>
+						<div class="clear"></div>
+						<div class="fl1 fl2">
+							<em>Adults</em>
+							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>1</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<div class="clear"></div>
+							<em>Rooms</em>
+							<select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>1</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+						<div class="fl1 fl2">
+							<em>Children</em>
+							<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>0</option>
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+						<div class="tmTextarea">
+							<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+						</div>
+						<a href="#" class="btn" data-type="submit">Submit</a>
+					</form>
+				</div>
+				<div class="grid_5 prefix_1">
+					<h3>WELCOME</h3>
+					<img src="{{url_for('static', filename='images1/page1_img1.jpg')}}" alt="" class="img_inner fleft" width="400px" height="400px">
+					<div class="extra_wrapper">
+						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
+						In mollis erat mattis neque facilisis, sit ametiol
+					</div>
+					<div class="clear cl1"></div>
+					<p>From nature walks in gardens that makes one wonder whether Paradise, as depicted in scriptures of various cultures, have actually been derived from such sensory experiences to relaxing over a cup of tea from the tea plantations dotting the hillside,.</p>
+					<p><span class="col1"></span>Only to realize most humbly of nature gifts as a bountiful provider, the tourist places in Ooty can be expected to resuscitate the soul, depleted of its spiritual reserves through the trials of everyday existence</p>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="socials">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google-plus"></a>
+					</div>
+					<div class="copy">
+						Visit at |  <a href="https://www.itchotels.com/in/en/itcgrandchola-chennai" rel="nofollow">ITC Grand Hotels, Chennai</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(function (){
+				$('#bookingForm').bookingForm({
+					ownerEmail: '#'
+				});
+			})
+			$(function() {
+				$('#bookingForm input, #bookingForm textarea').placeholder();
+			});
+		</script>
+	</body>
+</html>
+
