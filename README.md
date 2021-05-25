@@ -31,6 +31,8 @@ To be helpful to all the service providers like hotel owners,cab drivers etc.
       
   **LANGUAGE TRANSLATOR MODULE**:
     Googletrans is a free and unlimited python library that implemented Google Translate API.We can actually do a lot of things with the help of the Google Translate API ranging from detecting languages to simple text translation, setting source and destination languages, and translating entire lists of text phrases. The user has to enter the text to be translated in the input field and it gets translated to the desired language.
+    
+ 
 
 
 
